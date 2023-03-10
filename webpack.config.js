@@ -25,13 +25,13 @@ module.exports = {
       },
 
       {
-        test: /\.(png|jpg|jpeg|gif|WebP|ico)$/i,
-        type: 'asset/inline',
+        test: /\.(png|jpg|jpeg|gif|WebP|)$/i,
+        type: 'asset/resource',
       },
 
       {
         test: /\.svg$/,
-        type: 'asset/inline',
+        type: 'asset/resource',
         generator: {
           filename: path.join('icons', '[name].[contenthash][ext]'),
         },
