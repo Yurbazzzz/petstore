@@ -1,0 +1,75 @@
+.deal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.offers {
+    width: 26%;
+
+    &__title {
+        padding: 15px;
+        @include primaryFontColor;
+        font-weight: bold;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 15px;
+        box-shadow: rgb(0 9 88 / 15%) 0px 2px 16px;
+        margin-bottom: 20%;
+    }
+}
+
+.trending-products {
+    width: 65%;
+
+    &__title {
+        padding: 15px;
+        @include primaryFontColor;
+        font-weight: bold;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 15px;
+        box-shadow: rgb(0 9 88 / 15%) 0px 2px 16px;
+        margin-bottom: 20%;
+    }
+
+    &__name {
+        display: flex;
+        align-items: center
+    }
+
+}
+
+//
+//
+//
+
+.tab {
+    display: flex;
+    align-items: center;
+    fill: #000958;
+    overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background: none;
+    border: none;
+
+}
+.tab button:hover {
+    fill: #7f84ab;
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.active {
+    display: block;
+}

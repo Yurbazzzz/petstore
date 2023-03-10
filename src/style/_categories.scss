@@ -1,0 +1,42 @@
+.categories {
+
+    &__title {
+        @include primaryFontColor;
+        text-align: center;
+        font-size: 32px;
+        margin: 7% 0%;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 15%;
+    }
+
+    &__card {
+        width: 15%;
+        background-color: #fff0e1;
+        border-radius: 30px;
+        transition: all 1s;
+        text-decoration: none;
+    }
+    &__card:hover {
+        transition: all 0.5s;
+        background-color: #ffdbb7;
+        box-shadow: rgb(0 9 88 / 15%) 0px 2px 16px;
+    }
+    &__card--name {
+        @include primaryFontColor;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 15%;
+    }
+    &__card--img {
+        width: 50%;
+        margin: 0% 25%;
+        margin-top: 15%;
+
+        
+    }
+}
