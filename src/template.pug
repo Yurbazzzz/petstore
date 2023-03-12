@@ -46,7 +46,7 @@ body
           button.search__btn Search 
       
       .search__img-container 
-        img.search__img(src=require("./images/mops.png"), alt="mops")
+        img.search__img(src=require("./images/mops.WebP"), alt="mops")
 
     section.categories 
       h2.categories__title  Categories
@@ -54,27 +54,27 @@ body
       div.categories__container 
         a.categories__card(href="") 
           p.categories__card--name Dogs
-          img.categories__card--img(src=require("./images/dog-category.png"), alt="mops")
+          img.categories__card--img(src=require("./images/dog-category.WebP"), alt="mops")
 
         a.categories__card(href="") 
           p.categories__card--name Cat
-          img.categories__card--img(src=require("./images/cat-category.png"), alt="cat")
+          img.categories__card--img(src=require("./images/cat-category.WebP"), alt="cat")
 
         a.categories__card(href="") 
           p.categories__card--name Fish
-          img.categories__card--img(src=require("./images/fish-category.png"), alt="fish")
+          img.categories__card--img(src=require("./images/fish-category.WebP"), alt="fish")
 
         a.categories__card(href="") 
           p.categories__card--name Birds
-          img.categories__card--img(src=require("./images/birds-category.png"), alt="birds")
+          img.categories__card--img(src=require("./images/birds-category.WebP"), alt="birds")
 
         a.categories__card(href="") 
           p.categories__card--name Small pets
-          img.categories__card--img(src=require("./images/smallPets-category.png"), alt="Small pets")
+          img.categories__card--img(src=require("./images/smallPets-category.WebP"), alt="Small pets")
 
         a.categories__card(href="") 
           p.categories__card--name Reptiles
-          img.categories__card--img(src=require("./images/reptiles-category.png"), alt="reptiles")
+          img.categories__card--img(src=require("./images/reptiles-category.WebP"), alt="reptiles")
 
     section.deal 
       div.offers
@@ -96,46 +96,168 @@ body
 
           div.trending-products__nav.tab
 
-            button.tablinks(onclick="openCity(event, 'London')")
+            button.tablinks(onclick="openCity(event, 'page1')")
               svg.trending-products__btn(width='24' height='24' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd')
                 path(d='M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z')
             
-            button.tablinks(onclick="openCity(event, 'Paris')")
+            button.tablinks(onclick="openCity(event, 'page2')")
               svg.trending-products__btn(width='24' height='24' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd')
                 path(d='M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z')
       
         div.trending-products__container
           
-          #London.tabcontent.active
-            h3 London
-            p London is the capital city of England.
-          #Paris.tabcontent
-            h3 Paris
-            p Paris is the capital of France.
+          #page1.tabcontent.active
+
+            .trending-products__card
+              .trending-products__card--img.product1
+                .trending-products__card--hover 
+                  button.trending-products__card--btn Add to cart
+              .trending-products__card--name
+                a.trending-products__card--title(href="") Heated dog bed and blanked
+                svg.like(clip-rule='evenodd' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+                  path(d='m12 5.72c-2.624-4.517-10-3.198-10 2.461 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-5.678-7.396-6.944-10-2.461z' fill-rule='nonzero')
+              .trending-products__card--prise 
+                p.discond-prise $ 8.99
+                p.prise $ 13.99
+
+            .trending-products__card
+              .trending-products__card--img.product2 
+                .trending-products__card--hover 
+                  button.trending-products__card--btn Add to cart
+              .trending-products__card--name
+                a.trending-products__card--title(href="") Chichen treats 
+                svg.like(clip-rule='evenodd' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+                  path(d='m12 5.72c-2.624-4.517-10-3.198-10 2.461 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-5.678-7.396-6.944-10-2.461z' fill-rule='nonzero')
+              .trending-products__card--prise 
+                p.discond-prise $ 8.99
+                p.prise $ 13.99
+
+            .trending-products__card
+              .trending-products__card--img.product3 
+                .trending-products__card--hover 
+                  button.trending-products__card--btn Add to cart
+              .trending-products__card--name
+                a.trending-products__card--title(href="") Warm dog bed
+                svg.like(clip-rule='evenodd' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+                  path(d='m12 5.72c-2.624-4.517-10-3.198-10 2.461 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-5.678-7.396-6.944-10-2.461z' fill-rule='nonzero')
+              .trending-products__card--prise 
+                p.discond-prise $ 8.99
+                p.prise $ 13.99
+
+            .trending-products__card
+              .trending-products__card--img.product4 
+                .trending-products__card--hover 
+                  button.trending-products__card--btn Add to cart
+              .trending-products__card--name
+                a.trending-products__card--title(href="") Barf raw meat crackers
+                svg.like(clip-rule='evenodd' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+                  path(d='m12 5.72c-2.624-4.517-10-3.198-10 2.461 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-5.678-7.396-6.944-10-2.461z' fill-rule='nonzero')
+              .trending-products__card--prise 
+                p.discond-prise $ 8.99
+                p.prise $ 13.99
+
+            .trending-products__card
+              .trending-products__card--img.product5 
+                .trending-products__card--hover 
+                  button.trending-products__card--btn Add to cart
+              .trending-products__card--name
+                a.trending-products__card--title(href="") Bird feed
+                svg.like(clip-rule='evenodd' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+                  path(d='m12 5.72c-2.624-4.517-10-3.198-10 2.461 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-5.678-7.396-6.944-10-2.461z' fill-rule='nonzero')
+              .trending-products__card--prise 
+                p.discond-prise $ 8.99
+                p.prise $ 13.99
+
+            .trending-products__card
+              .trending-products__card--img.product6 
+                .trending-products__card--hover 
+                  button.trending-products__card--btn Add to cart
+              .trending-products__card--name
+                a.trending-products__card--title(href="") Bone toy
+                svg.like(clip-rule='evenodd' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+                  path(d='m12 5.72c-2.624-4.517-10-3.198-10 2.461 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-5.678-7.396-6.944-10-2.461z' fill-rule='nonzero')
+              .trending-products__card--prise 
+                p.discond-prise $ 8.99
+                p.prise $ 13.99
+
+          #page2.tabcontent.active
+
+            .trending-products__card
+              .trending-products__card--img.product1
+                .trending-products__card--hover 
+                  button.trending-products__card--btn Add to cart
+              .trending-products__card--name
+                a.trending-products__card--title(href="") Heated dog bed and blanked
+                svg.like(clip-rule='evenodd' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+                  path(d='m12 5.72c-2.624-4.517-10-3.198-10 2.461 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-5.678-7.396-6.944-10-2.461z' fill-rule='nonzero')
+              .trending-products__card--prise 
+                p.discond-prise $ 8.99
+                p.prise $ 13.99
+
+            .trending-products__card
+              .trending-products__card--img.product2 
+                .trending-products__card--hover 
+                  button.trending-products__card--btn Add to cart
+              .trending-products__card--name
+                a.trending-products__card--title(href="") Chichen treats 
+                svg.like(clip-rule='evenodd' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+                  path(d='m12 5.72c-2.624-4.517-10-3.198-10 2.461 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-5.678-7.396-6.944-10-2.461z' fill-rule='nonzero')
+              .trending-products__card--prise 
+                p.discond-prise $ 8.99
+                p.prise $ 13.99
+
+            .trending-products__card
+              .trending-products__card--img.product3 
+                .trending-products__card--hover 
+                  button.trending-products__card--btn Add to cart
+              .trending-products__card--name
+                a.trending-products__card--title(href="") Warm dog bed
+                svg.like(clip-rule='evenodd' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+                  path(d='m12 5.72c-2.624-4.517-10-3.198-10 2.461 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-5.678-7.396-6.944-10-2.461z' fill-rule='nonzero')
+              .trending-products__card--prise 
+                p.discond-prise $ 8.99
+                p.prise $ 13.99
+
+            .trending-products__card
+              .trending-products__card--img.product4 
+                .trending-products__card--hover 
+                  button.trending-products__card--btn Add to cart
+              .trending-products__card--name
+                a.trending-products__card--title(href="") Barf raw meat crackers
+                svg.like(clip-rule='evenodd' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+                  path(d='m12 5.72c-2.624-4.517-10-3.198-10 2.461 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-5.678-7.396-6.944-10-2.461z' fill-rule='nonzero')
+              .trending-products__card--prise 
+                p.discond-prise $ 8.99
+                p.prise $ 13.99
+
+            .trending-products__card
+              .trending-products__card--img.product5 
+                .trending-products__card--hover 
+                  button.trending-products__card--btn Add to cart
+              .trending-products__card--name
+                a.trending-products__card--title(href="") Bird feed
+                svg.like(clip-rule='evenodd' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+                  path(d='m12 5.72c-2.624-4.517-10-3.198-10 2.461 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-5.678-7.396-6.944-10-2.461z' fill-rule='nonzero')
+              .trending-products__card--prise 
+                p.discond-prise $ 8.99
+                p.prise $ 13.99
+
+            .trending-products__card
+              .trending-products__card--img.product6 
+                .trending-products__card--hover 
+                  button.trending-products__card--btn Add to cart
+              .trending-products__card--name
+                a.trending-products__card--title(href="") Bone toy
+                svg.like(clip-rule='evenodd' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+                  path(d='m12 5.72c-2.624-4.517-10-3.198-10 2.461 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-5.678-7.396-6.944-10-2.461z' fill-rule='nonzero')
+              .trending-products__card--prise 
+                p.discond-prise $ 8.99
+                p.prise $ 13.99
+
+          
+           
+           
           
           script
             include ./script/tabs.js
 
-
-
-//-  Жёлты брелок
-//-  Жёлты брелок
-//-  Жёлты брелок
-//-  Жёлты брелок
-//-  Жёлты брелок
-//-  Жёлты брелок
-//-  Жёлты брелок
-//-  Жёлты брелок
-//-  Жёлты брелок
-//-  Жёлты брелок
-//-  Жёлты брелок
-//-  Жёлты брелок
-//-  Жёлты брелок
-//-  Жёлты брелок
-//-  Жёлты брелок
-//-  Жёлты брелок
-//-  Жёлты брелок
-//-  Жёлты брелок
-//-  Жёлты брелок
-
-//-  Жёлты брелок

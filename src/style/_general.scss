@@ -27,7 +27,34 @@ body {
     padding: 0% 10%;
     font-family: 'Red Hat Display', sans-serif;
 }
+
 .logo {
     fill: #000958;
     margin-right: 10px;
+}
+
+.like {
+    width: 20px;
+    height: 20px;
+    fill: #000958;
+    opacity: 0.7;
+}
+.like:hover {
+    fill: #ff5b2e;
+    opacity: 1;
+    cursor: pointer;
+}
+.like-active {
+    fill: #ff5b2e;
+}
+
+
+.discond-prise {
+    color: #ff5b2e;
+    font-weight: bold;
+}
+.prise {
+    color: #c1c1c1;
+    font-size: 12px;
+    margin-left: 3%;
 }

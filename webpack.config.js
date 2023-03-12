@@ -27,6 +27,7 @@ module.exports = {
       {
         test: /\.(png|jpg|jpeg|gif|WebP|)$/i,
         type: 'asset/resource',
+
       },
 
       {
@@ -87,4 +88,3 @@ module.exports = {
     ],
   },
 };
-
