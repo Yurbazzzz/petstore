@@ -1,0 +1,394 @@
+
+@media screen and (max-width: 1024px) {
+    .header{
+        &__link {
+            font-size: 14px;
+        }
+        &__tool {
+            width: 13%;
+        }
+    }
+    .search {
+        &__title {
+            font-size: 30px;
+        }
+        &__subtitle {
+            font-size: 15px;
+        }
+        &__btn {
+            font-size: 15px;
+        }
+    }
+    .categories{
+        &__container {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        &__card {
+            width: 30%;
+            margin-bottom: 3%;
+        }
+        &__card--name {
+            font-size: 15px;
+        }
+    }
+    .blog {
+        &__card--title {
+            font-size: 15px;
+        }
+        &__card--subtitle {
+            font-size: 10px;
+        }
+        &__card--author {
+            margin-top: 5%;
+        }
+        &__card--author-img {
+            width: 30px;
+            height: 32px;
+        }
+        &__card--author-name {
+            font-size: 13px;
+        }
+    }
+    .footer {
+        &__nav {
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .openbtn {
+        display: block;
+        fill: #000958;
+    }
+    .header__nav{
+        display: none;
+    }
+    .header__tools{
+        display: none;
+    }
+    .search {
+        display: none;
+        &__form {
+            margin-top: 5%;
+        }
+        &__btn {
+            font-size: 14px;
+        }
+        &__input::placeholder {
+            font-size: 14px;
+        }
+    }
+    .search--mobile {
+        padding: 0% 10%;
+        display: block;
+        &__container{
+            display: flex;
+            margin-top: 5%;
+        }
+        &__content {
+            width: 70%;
+            padding-right: 7%;
+        }
+        &__title {
+            margin-top: 20%;
+            @include primaryFontColor;
+        }
+        &__subtitle {
+            margin-top: 10%;
+            color: #7f84ab;
+        }
+        &__img-conteiner {
+            width: 30%;
+        }
+    }
+    .categories{
+
+        &__card--name {
+            font-size: 15px;
+        }
+    }
+    .favorite {
+        &__card--title {
+            font-size: 19px;
+        }
+        &__card--subtitle {
+            font-size: 13px;
+        }
+    }
+    .blog {
+        &__container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        &__card {
+            width: 48%;
+            margin-bottom: 5%;
+        }
+        &__card--title {
+            font-size: 15px;
+        }
+        &__card--subtitle {
+            font-size: 10px;
+        }
+        &__card--author {
+            margin-top: 5%;
+        }
+        &__card--author-img {
+            width: 30px;
+            height: 32px;
+        }
+        &__card--author-name {
+            font-size: 13px;
+        }
+        &__btn {
+            display: block;
+            width: 47%;
+        }
+        &__btn:hover {
+            box-shadow: rgb(0 9 88 / 15%) 0px 2px 16px;
+        }
+    }
+    .footer {
+        &__colomn {
+            width: 32%;
+        }
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .search--mobile {
+        &__title {
+            font-size: 20px;
+            margin-top: 10%;
+            @include primaryFontColor;
+        }
+        &__subtitle {
+            font-size: 15px;
+            margin-top: 3%;
+            color: #7f84ab;
+        }
+        &__img-conteiner {
+            width: 30%;
+        }
+    }
+    .categories__title {
+        font-size: 25px;
+    }
+    .search__input {
+        font-size: 13px;
+    }
+    .trending-products {
+        &__title {
+            font-size: 15px;
+        }
+    }
+    .logo {
+        width: 30px;
+        height: 25px;
+    }
+    .categories {
+        &__container {
+            display: flex;
+        }
+        &__card {
+            width: 47%;
+        }
+    }
+    .trending-products {
+        &__card {
+            width: 47%;
+        }
+        &__card--title {
+            font-size: 13px;
+        }
+    }
+    .favorite__name {
+        font-size: 17px;
+    }
+    .favorite {
+        &__container {
+            justify-content: space-between;
+        }
+        &__card {
+            width: 48%;
+        }
+        &__card--title {
+            font-size: 15px;
+        }
+        &__card--subtitle {
+            font-size: 10px;
+        }
+        &__card--btn {
+            font-size: 13px;
+        }
+    }
+    .blog {
+        &__title {
+            font-size: 25px;
+        }
+    }
+    .footer {
+        &__content {
+            display: flex;
+            flex-direction: column;
+        }
+        &__nav {
+            margin-top: 5%;
+            width: 100%;
+        }
+        &__colomn {
+            width: 30%;
+        }
+        &__social {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 5%;
+        }
+    }
+    .social-container {
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .search--mobile {
+        padding: 0% 10%;
+        display: block;
+        &__container{
+            display: flex;
+            flex-direction: column;
+            margin-top: 5%;
+        }
+        &__content {
+            width: 100%;
+        }
+        &__title {
+            font-size: 17px;
+            @include primaryFontColor;
+        }
+        &__subtitle {
+            font-size: 13px;
+            margin-top: 5%;
+            color: #7f84ab;
+        }
+        &__img-conteiner {
+            width: 20%;
+        }
+    }
+    .search__img {
+        display: none;
+    }
+    .categories {
+        &__container {
+            display: flex;
+            flex-direction: column;
+        }
+        &__card {
+            width: 60%;
+            margin: 0% 20% 5%;
+        }
+    }
+    .trending-products__title {
+        flex-direction: column;
+        align-items: flex-start
+    }
+    .tab {
+        margin-top: 5%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .trending-products {
+        &__card {
+            width: 70%;
+            margin: 0% 15% 5%;
+        }
+        &__card--title {
+            font-size: 13px;
+        }
+    }
+    .favorite__name {
+        font-size: 15px;
+    }
+    .favorite {
+        &__container {
+            flex-direction: column;
+        }
+        &__card {
+            width: 100%;
+            margin-bottom: 5%;
+        }
+        &__card--title {
+            font-size: 15px;
+        }
+        &__card--subtitle {
+            font-size: 10px;
+        }
+        &__card--btn {
+            font-size: 13px;
+        }
+    }
+    .blog {
+        &__container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &__card {
+            width: 80%;
+            margin-bottom: 5%;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .search--mobile {
+        padding: 0% 10%;
+        display: block;
+        &__container{
+            display: flex;
+            margin-top: 5%;
+            flex-direction: column-reverse;
+        }
+        &__content {
+            width: 100%;
+            padding-right: 7%;
+        }
+        &__title {
+            font-size: 17px;
+            @include primaryFontColor;
+        }
+        &__subtitle {
+            font-size: 13px;
+            margin-top: 5%;
+            color: #7f84ab;
+        }
+        &__img-conteiner {
+            width: 50%;
+            max-height: 150px;
+            margin: 0% 25%;
+        }
+    }
+    .trending-products {
+        &__card {
+            width: 100%;
+            margin: 0%;
+            margin-bottom: 5%;
+        }
+        &__card--title {
+            font-size: 13px;
+            
+        }
+    }
+    .favorite__name {
+        font-size: 13px;
+    }
+}

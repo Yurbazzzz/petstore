@@ -62,4 +62,17 @@
         margin-left: 3%;
         font-weight: bold;
     }
+    &__btn {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 47%;
+        padding: 3%;
+        background-color: #ff5b2e;
+        color: white;
+        font-size: 15px;
+        border-radius: 30px;
+        border: none;
+    }
+
 }
