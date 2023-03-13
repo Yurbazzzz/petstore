@@ -11,24 +11,27 @@
 }
 
 * {
+    text-decoration: none;
     margin: 0%;
-
-    // color: #fff0e1; //card bg
     // color: #ff5b2e; //some text + like
-    // color: #fde7cb; //footer color
     // color: #7f84ab; // card subtitle + sometext
 
     // box-shadow: rgb(0 9 88 / 15%) 0px 2px 16px;
 }
 
 body {
-    padding: 0% 10%;
     font-family: 'Red Hat Display', sans-serif;
 }
 
 .logo {
     fill: #000958;
     margin-right: 10px;
+}
+.icon {
+    fill: #000958;
+}
+.icon:hover {
+    fill: #7f84ab;
 }
 
 .like {
