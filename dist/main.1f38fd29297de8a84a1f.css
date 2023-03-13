@@ -3,6 +3,8 @@
   \********************************************************************************************************************************************************/
 * {
   margin: 0%;
+  color: #f9e7fc;
+  color: #e7f6fc;
 }
 
 body {
@@ -41,6 +43,14 @@ body {
   color: #c1c1c1;
   font-size: 12px;
   margin-left: 3%;
+}
+
+.pink-hover:hover {
+  background-color: rgba(249, 231, 252, 0.631372549);
+}
+
+.blue-hover:hover {
+  background-color: rgba(231, 246, 252, 0.631372549);
 }
 
 .header {
@@ -396,11 +406,16 @@ body {
   color: #000958;
   -webkit-box-shadow: rgba(0, 9, 88, 0.15) 0px 2px 16px;
           box-shadow: rgba(0, 9, 88, 0.15) 0px 2px 16px;
-  padding: 8% 0%;
+  background-color: rgb(174, 74, 74);
+}
+.favorite__card:hover .favorite__card--content {
+  z-index: 0;
 }
 .favorite__card--content {
   z-index: -1;
   width: 100%;
+  border-radius: 15px;
+  background-color: rgba(0, 9, 88, 0.2352941176);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,11 +426,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .favorite__card--title {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 3%;
+  margin: 15% 0% 1% 0%;
 }
 .favorite__card--subtitle {
   font-size: 16px;
@@ -427,6 +445,10 @@ body {
   background-color: #ff5b2e;
   padding: 3% 7%;
   border-radius: 35px;
+  margin-bottom: 15%;
+}
+.favorite__card--btn:hover {
+  cursor: pointer;
 }
 
 .cat-background {
@@ -434,6 +456,17 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: rgb(174, 74, 74);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .dog-background {
@@ -441,6 +474,17 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: rgb(174, 74, 74);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .tab {

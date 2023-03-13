@@ -120,7 +120,7 @@
 }
 
 .favorite {
-    
+   
     &__name {
         display: flex;
         align-items: center;
@@ -141,19 +141,25 @@
         border-radius: 15px;
         @include primaryFontColor;
         box-shadow: rgb(0 9 88 / 15%) 0px 2px 16px;
-        padding: 8% 0%;
+        background-color: rgb(174, 74, 74);
+    }
+    &__card:hover .favorite__card--content {
+        z-index: 0;
     }
     &__card--content {
         z-index: -1;
         width: 100%;
+        border-radius: 15px;
+        background-color: #0009583c;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
     &__card--title {
         font-size: 24px;
         font-weight: bold;
-        margin-bottom: 3%;
+        margin: 15% 0% 1% 0%;
     }
     &__card--subtitle {
         font-size: 16px;
@@ -165,6 +171,10 @@
         background-color: #ff5b2e;
         padding: 3% 7%;
         border-radius: 35px;
+        margin-bottom: 15%;
+    }
+    &__card--btn:hover {
+        cursor: pointer;
     }
 
 }
@@ -174,12 +184,22 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: rgb(174, 74, 74);
+    border-radius: 15px;        
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 .dog-background {
     background-image: url('../images/favourite1.WebP');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: rgb(174, 74, 74);
+    border-radius: 15px;        
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
 //
