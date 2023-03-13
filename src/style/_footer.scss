@@ -1,17 +1,43 @@
 .footer {
-    padding: 3% 10% 0%;
+    padding: 5% 10% 0%;
     background-color: #fde7cb;
     
-
+    &__logo {
+        width: 10%;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5%;
+    }
+    &__nav {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
     &__title {
         font-size:16px;
         font-weight: bold;
+        margin-bottom: 2%;
         @include primaryFontColor;
-        margin-bottom: 2%
+    }
+    &__link {
+        @include primaryFontColor;
+        font-size: 16px;
+        margin: 5% 0%;
+    }
+    &__link:hover {
+        color: #7f84ab;
+    }
+    &__colomn {
+        display: flex;
+        flex-direction: column
     }
 
-
-
+    &__social {
+        width: 10%;
+        
+    }
 
     &__bottom {
         @include primaryFontColor ;
