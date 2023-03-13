@@ -50,6 +50,18 @@ module.exports = {
       template: path.join(__dirname, 'src', 'template.pug'),
       filename: 'index.html',
     }),
+    new HtmlWebpackPlugin({      
+      template: path.join(__dirname, 'src', 'pages', 'categories.pug'),
+      filename: path.join('pages','categories.html')
+    }),
+    new HtmlWebpackPlugin({      
+      template: path.join(__dirname, 'src', 'pages', 'blog.pug'),
+      filename: path.join('pages','blog.html')
+    }),
+    new HtmlWebpackPlugin({      
+      template: path.join(__dirname, 'src', 'pages', 'contact.pug'),
+      filename: path.join('pages','contact.html')
+    }),
 
     new FileManagerPlugin({
       events: {
