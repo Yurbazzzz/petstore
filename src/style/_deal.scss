@@ -1,27 +1,11 @@
 .deal {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
-.offers {
-    width: 26%;
-
-    &__title {
-        padding: 15px;
-        @include primaryFontColor;
-        font-weight: bold;
-        font-size: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        border-radius: 15px;
-        box-shadow: rgb(0 9 88 / 15%) 0px 2px 16px;
-        margin-bottom: 20%;
-    }
-}
-
 .trending-products {
-    width: 70%;
+    width: 100%;
 
     &__title {
         padding: 15px;
@@ -33,7 +17,7 @@
         justify-content: space-between;
         border-radius: 15px;
         box-shadow: rgb(0 9 88 / 15%) 0px 2px 16px;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
     }
 
     &__name {
@@ -57,7 +41,7 @@
     &__card--hover {
         z-index: -1;
         width: 100%;
-        padding: 30% 25%;
+        padding: 25% 20%;
         border-radius: 15px;
         background-color: #0009583c;
         display: flex;
@@ -66,14 +50,13 @@
     }
     &__card--img:hover .trending-products__card--hover{
         z-index: 0;
-
     }
 
     &__card--btn {
         @include primaryFontColor;
         font-size: 16px;
         background-color: white;
-        padding: 10% 15%;
+        padding: 7% 15%;
         border: none;
         border-radius: 50px;
     }
@@ -91,6 +74,7 @@
         @include primaryFontColor;
         font-size: 16px;
         text-decoration: none;
+        font-weight: bold;
     }
     &__card--prise {
         display: flex;
@@ -100,7 +84,6 @@
     }
 
 }
-
 .product1 {
     background-image: url('../images/products1.WebP');
     background-size: cover;
@@ -129,7 +112,71 @@
     background-position: center;
 }
 .product6 {
+
     background-image: url('../images/products6.WebP');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.favorite {
+    
+    &__name {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        color: #000958;
+        font-weight: bold;
+        font-size: 24px;
+        box-shadow: rgb(0 9 88 / 15%) 0px 2px 16px;
+        border-radius: 15px;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 5% 0%;
+    }
+    &__card {
+        width: 48%;
+        border-radius: 15px;
+        @include primaryFontColor;
+        box-shadow: rgb(0 9 88 / 15%) 0px 2px 16px;
+        padding: 8% 0%;
+    }
+    &__card--content {
+        z-index: -1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__card--title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 3%;
+    }
+    &__card--subtitle {
+        font-size: 16px;
+        margin-bottom: 3%;
+    }
+    &__card--btn {
+        margin-top: 3%;
+        color: white;
+        background-color: #ff5b2e;
+        padding: 3% 7%;
+        border-radius: 35px;
+    }
+
+}
+
+.cat-background {
+    background-image: url('../images/favourite2.WebP');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.dog-background {
+    background-image: url('../images/favourite1.WebP');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -145,8 +192,6 @@
     fill: #000958;
     overflow: hidden;
 }
-
-/* Style the buttons inside the tab */
 .tab button {
     background: none;
     border: none;
@@ -161,7 +206,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .active {
     padding: 0%;
     display: flex;
