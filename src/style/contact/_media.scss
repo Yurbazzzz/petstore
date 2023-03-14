@@ -1,0 +1,91 @@
+@media screen and (max-width: 1200px) {
+    .contact__card--name {
+        font-size: 25px;
+    }
+    .form__title {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .contact {
+        flex-direction: column;
+        font-size: 25px;
+        
+        &__info {
+            width: 100%;
+        }
+        &__map--container {
+            margin-bottom: 3%;
+        }
+    }
+    .form {
+        margin: 5% 8% 3%;
+
+        &__title {
+            font-size: 25px;
+        }
+        &__input {
+            margin-top: 5%;
+        }
+        &__container {
+            margin-top: 3%;
+        }
+        &__mail--input {
+            margin-top: 0%;
+        }
+        &__message {
+            margin-top: 3%;
+        }
+        &__btn {
+            margin-bottom: 3%;
+        }
+    }
+    .container {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 540px) {
+    .contact{
+        &__card--name {
+            font-size: 24px;
+        }
+        &__card--links {
+            flex-direction: column;
+        }
+        &__card--links {
+            flex-direction: column;
+        }
+        &__card--link {
+            width: 100%;
+            align-items: center;
+        }
+    }
+    .form {
+        &__title {
+            font-size: 24px;
+        }
+        &__user {
+            flex-direction: column;
+        }
+        &__name {
+            width: 100%;
+            margin-bottom: 3%;
+        }
+    }
+}
+@media screen and (max-width: 425px) {
+    .contact__card--name {
+        font-size: 21px;
+    }
+    .form {
+        &__title {
+            font-size: 19px;
+        }
+
+    }
+}

@@ -1,0 +1,176 @@
+.contact {
+    padding: 7% 18%;
+    color: #000958;
+    display: flex;
+    justify-content: space-between;
+    
+    &__info {
+        display: flex;
+        flex-direction: column;
+        width: 55%;
+    }
+
+    &__card {
+        width: 100%;
+        border-radius: 15px;
+        margin-bottom: 2%;
+        box-shadow: rgb(0 9 88 / 15%) 0px 2px 16px;
+    }
+    &__card--name {
+        font-size: 32px;
+        font-weight: bold;
+        margin: 6% 4% 0%;
+    }
+    &__card--links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 8% 4% 15%;
+    }
+    &__card--link {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__card--title {
+        font-size: 16px;
+        display: flex;
+        align-items: stretch;
+        margin: 10% 0%;
+    }
+    &__card--subtitle {
+        font-size: 16px;
+        font-weight: lighter;
+        margin-bottom: 3%;
+    }
+    &__map--container {
+        width: 100%;
+        overflow: hidden;
+        max-height: 200px;
+        border-radius: 15px;
+        box-shadow: rgb(0 9 88 / 15%) 0px 2px 16px;
+    }
+    &__map {
+        width: 100%;
+    }
+}
+.contact--icon {
+    margin-right: 10px;
+    fill: #000958;
+}
+.container {
+    background-color: #000958;
+    color: white;
+    width: 43%;
+    border-radius: 15px;
+    box-shadow: rgb(0 9 88 / 15%) 0px 2px 16px;
+}
+.form {
+    color: white;
+    margin: 10% 8% 0%;
+    &__title {
+        font-size: 32px;
+        font-weight: bold;
+        margin: 9% 8% 0%;
+    }
+    &__user {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__name {
+        width: 46%;
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    &__input {
+        margin-top: 10%;
+        padding: 5% 3%;
+        border: none;
+        border-bottom: 2px solid #474e8b;
+        background-color: #000958;
+        color: white;
+        font-size: 16px;
+    }
+    &__input:focus {
+        outline: none;
+        border-bottom: 2px solid #fff;
+        transition: all 1s;
+    }
+    &__input::placeholder {
+       color: white;
+       font-size: 16px;
+    }
+    &__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 7%;
+    }
+    &__mail--input {
+        width: 100%;
+        margin-top: 5%;
+        padding: 5% 0%;
+        border: none;
+        border-bottom: 2px solid #474e8b;
+        background-color: #000958;
+        color: white;
+        font-size: 16px;
+    }
+    &__mail--input::placeholder {
+        color: white;
+        font-size: 16px;
+    }
+    &__mail--input:focus {
+        outline: none;
+        border-bottom: 2px solid #fff;
+        transition: all 1s;
+    }
+    &__message {
+        width: 94%;
+        height: 150px;
+        border: 2px solid #474e8b;
+        background-color: #000958;
+        color: white;
+        font-size: 16px;
+        border-radius: 10px;
+        margin-top: 7%;
+        padding: 3%;
+        resize: none;
+    }
+    &__message::placeholder {
+        color: #474e8b;
+        font-size: 16px;
+    }
+    &__message:focus {
+        outline: none;
+        border: 2px solid #fff;
+        transition: all 1s;
+        color: white;
+    }
+    &__message::-webkit-scrollbar {
+        display: none;
+    }
+    &__btn {
+        width: 100%;
+        margin-top: 10%;
+        padding: 4% 0%;
+        border-radius: 30px;
+        border: none;
+        position: relative;
+        color: white;
+        background-color: #ff5b2e;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+}
+
+
+    // color: #ff5b2e; //some text + like
+    // color: #7f84ab; // card subtitle + sometext
+
+    // box-shadow: rgb(0 9 88 / 15%) 0px 2px 16px;
