@@ -1,0 +1,12 @@
+.categories--page {
+    padding:0% 25%;
+    &__container {
+        flex-wrap: wrap;
+        
+    }
+    &__card {
+        width: 23%;
+        margin-bottom: 3%;
+    }
+    
+}

@@ -33,12 +33,9 @@ body
       a.header__tool(href='')
         svg.header__icon(xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewbox='0 0 24 24')
           path(d='M19 7.001c0 3.865-3.134 7-7 7s-7-3.135-7-7c0-3.867 3.134-7.001 7-7.001s7 3.134 7 7.001zm-1.598 7.18c-1.506 1.137-3.374 1.82-5.402 1.82-2.03 0-3.899-.685-5.407-1.822-4.072 1.793-6.593 7.376-6.593 9.821h24c0-2.423-2.6-8.006-6.598-9.819z')
-
     button.openbtn(data-popup="form-order")
       svg.openBtn-blue(clip-rule='evenodd' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
         path(d='m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z' fill-rule='nonzero')
-
-
     div.popup(data-popup="form-order")
       div.window
         button.close 
@@ -59,7 +56,43 @@ body
         a.window__link(href='./blog.html') blog
         a.window__link(href='./contact.html') contact
   
-  
+  main 
+    section.categories.categories--page
+      h2.categories__title  Categories
+
+      div.categories__container.categories--page__container
+        a.categories__card.categories--page__card(href="") 
+          p.categories__card--name Dogs
+          img.categories__card--img(src=require("../images/dog-category.WebP"), alt="mops")
+
+        a.categories__card.categories--page__card(href="") 
+          p.categories__card--name Cat
+          img.categories__card--img(src=require("../images/cat-category.WebP"), alt="cat")
+
+        a.categories__card.categories--page__card(href="") 
+          p.categories__card--name Fish
+          img.categories__card--img(src=require("../images/fish-category.WebP"), alt="fish")
+
+        a.categories__card.categories--page__card(href="") 
+          p.categories__card--name Birds
+          img.categories__card--img(src=require("../images/birds-category.WebP"), alt="birds")
+
+        a.categories__card.categories--page__card(href="") 
+          p.categories__card--name Small pets
+          img.categories__card--img(src=require("../images/smallPets-category.WebP"), alt="Small pets")
+
+        a.categories__card.categories--page__card(href="") 
+          p.categories__card--name Reptiles
+          img.categories__card--img(src=require("../images/reptiles-category.WebP"), alt="reptiles")
+
+        a.categories__card.categories--page__card(href="") 
+          p.categories__card--name Toys
+          img.categories__card--img(src=require("../images/Toys-category.WebP"), alt="Toys")
+
+        a.categories__card.categories--page__card(href="") 
+          p.categories__card--name Sale
+          img.categories__card--img(src=require("../images/sales-category.WebP"), alt="reptiles")
+
   footer.footer 
     div.footer__content
       svg.logo.footer__logo(width='24' height='24' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd')

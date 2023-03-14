@@ -1,0 +1,35 @@
+
+@media screen and (max-width: 1024px) {
+    .categories--page{
+        padding: 0% 20%;
+
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .categories__title {
+        font-size: 25px;
+    }
+    .categories {
+        &__container {
+            display: flex;
+        }
+        &__card {
+            width: 47%;
+        }
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .categories {
+        &__container {
+            display: flex;
+            flex-direction: column;
+        }
+        &__card {
+            width: 60%;
+            margin: 0% 20% 5%;
+        }
+    }
+}
